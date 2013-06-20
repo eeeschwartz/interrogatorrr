@@ -2,6 +2,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     builder (3.2.2)
+    haml (4.0.2)
+      tilt
     jwt (0.1.8)
       multi_json (>= 1.5)
     multi_json (1.7.7)
@@ -22,5 +24,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  haml
   sinatra
   twilio-ruby
