@@ -1,2 +1,6 @@
 - recordings.each do |r|
   %p= r.mp3
+  = r.transcriptions.methods - Object.methods
+  = r.transcriptions.list.each do |t|
+    %p= t.status
+    %p= t.transcription_text
