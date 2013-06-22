@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), '..', 'call.rb')
+require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
 # setup test environment
 set :environment, :test

@@ -1,2 +1,2 @@
-require "./call"
+require "./app"
 run Sinatra::Application

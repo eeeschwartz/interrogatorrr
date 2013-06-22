@@ -4,7 +4,7 @@ require './lib/phone'
 require './lib/question'
 
 post '/question.xml' do
-  builder :question, locals: {question: Question.all.first}
+  builder :question, locals: {questions: Question.all[0..3]}
 end
 
 post '/call/' do
