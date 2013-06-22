@@ -3,5 +3,5 @@ xml.Response do
   xml.Say voice: "woman" do
     xml.text! question
   end
-  xml.Record maxLength: 60
+  xml.Record maxLength: 60, transcribe: true
 end
