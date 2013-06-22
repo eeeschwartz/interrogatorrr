@@ -15,7 +15,7 @@ class Phone
 
   def call_me
     client.account.calls.create(
-      url: "http://demo.twilio.com/docs/voice.xml",
+      url: "http://intervoo.herokuapp.com/question.xml",
       to: "+17738600685",
       from: "+17083254515",
       record: true)
