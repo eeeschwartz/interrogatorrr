@@ -2,7 +2,7 @@ require "rubygems"
 require "sinatra"
 require "./lib/phone"
 
-get "/question.xml" do
+post "/question.xml" do
   builder :question, locals: {question: "How are you feeling today?"}
 end
 
