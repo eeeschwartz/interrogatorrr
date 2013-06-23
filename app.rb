@@ -1,7 +1,12 @@
 require 'rubygems'
 require 'sinatra'
+require 'yaml'
 require './lib/phone'
 require './lib/question'
+
+get '/question.xml' do
+  builder :question, locals: {questions: Question.all[0..3]}
+end
 
 post '/question.xml' do
   builder :question, locals: {questions: Question.all[0..3]}
