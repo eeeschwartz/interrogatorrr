@@ -3,6 +3,10 @@ class Question
     YAML.load_file("questions.yml")
   end
 
+  def self.first
+    all.first
+  end
+
   def random
   end
 

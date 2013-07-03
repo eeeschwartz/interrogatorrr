@@ -5,11 +5,11 @@ require './lib/phone'
 require './lib/question'
 
 get '/question.xml' do
-  builder :question, locals: {questions: Question.first}
+  builder :question, locals: {question: Question.first}
 end
 
 post '/question.xml' do
-  builder :question, locals: {questions: Question.first}
+  builder :question, locals: {question: Question.first}
 end
 
 post '/call/' do

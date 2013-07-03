@@ -1,10 +1,10 @@
-xml.instruct! :xml, :version => '1.0'
+xml.instruct! :xml, :version => "1.0"
 
 xml.Response do
   xml.Say voice: "woman" do
     xml.text! question
   end
-  xml.Record maxLength: 30, transcribe: false
+  xml.Record maxLength: 30, transcribe: true
 end
 
 # xml.Response do
