@@ -31,7 +31,7 @@ Your 1 minute answer is transcribed and published to your blog.
 ### Application structure
 Actors:
 
-- The interstitial app hosted on heroku (app)
+- The interstitial Sinatra app hosted on Heroku in my case (app)
 - Jekyll blog hosted on github pages (blog)
 - Twilio (twilio)
 
